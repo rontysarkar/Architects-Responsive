@@ -21,6 +21,7 @@
 header {
   background: rgba(255, 144, 14, 0.1);
   padding: 50px 240px;
+ 
 }
 nav {
   display: flex;
@@ -61,14 +62,68 @@ nav a {
 }
 .banner-discription {
   color: #424242;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   padding: 5px;
 }
 .banner img{
-    margin-top: 20px;
+    margin-top: 1.25rem;
     width:100%;
 }
+
+/* team sction styles */
+
+.team-container{
+    max-width:1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 5.5rem;
+   
+}
+
+
+.team-img{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 1.25rem;
+ padding: 1rem;
+}
+.team-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.team-title .span1{
+    color:#424242;
+    font-size:3rem;
+    font-weight:500;
+}
+.span2{
+    color:#131313;
+    font-size:3rem;
+    font-weight:700;
+}
+.span3{
+    color:#FF900E;
+    font-size:3rem;
+    font-weight:700;
+}
+.team-discription{
+    color: #424242;
+    margin: 1.25rem auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive media queary styles */
@@ -77,9 +132,19 @@ nav a {
     header{
         padding: 20px;
     }
-    nav{
+    nav ,.team-container{
         flex-direction:column;
+        gap: 20px;
     }
+    /* team section styles */
+
+    .team-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team-content{
+        padding: 20px;
+    }
+    
 }
 
 /* tablet or midieam divice  */
@@ -92,5 +157,15 @@ nav a {
     header{
         padding: 50px;
 
+    }
+    /*  team sction styles */
+    .team-container{
+        flex-direction: column-reverse;
+    }
+    .team-img{
+        width: 95vw;
+    }
+    .team-content{
+        padding: 20px;
     }
 }

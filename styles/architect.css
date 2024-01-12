@@ -5,6 +5,9 @@
   border-radius: 8px;
   background: #ff900e;
   padding: 16px 22px;
+  font-size: 1.25rem;
+  font-weight:600;
+  cursor:pointer;
   color: #FFFFFF;
   border:none;
   margin-top: 2rem;
@@ -31,7 +34,7 @@ nav {
 }
 nav > ul {
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 nav li {
   list-style: none;
@@ -61,4 +64,33 @@ nav a {
   font-size: 16px;
   font-weight: 400;
   padding: 5px;
+}
+.banner img{
+    margin-top: 20px;
+    width:100%;
+}
+
+
+/* Responsive media queary styles */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction:column;
+    }
+}
+
+/* tablet or midieam divice  */
+
+@media screen and (min-width:576px) and (max-width:960px){
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    header{
+        padding: 50px;
+
+    }
 }
